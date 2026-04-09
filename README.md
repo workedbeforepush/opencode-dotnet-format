@@ -98,10 +98,6 @@ dotnet_sort_system_directives_first = true
 
 See the [.NET code style rule options](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/code-style-rule-options) documentation for all available settings.
 
-## Known issues
-
-- **IDE0060 crash on .NET 10 SDK**: The `dotnet format style` command may crash with `System.NotSupportedException` due to an analyzer bug in certain .NET 10 SDK versions. The plugin logs a warning and continues — no files are corrupted.
-
 ## Troubleshooting
 
 Enable debug logging to see plugin output:
