@@ -1,6 +1,6 @@
 {
   "name": "@workedbeforepush/opencode-dotnet-format",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "OpenCode plugin that automatically formats .NET files using dotnet format",
   "type": "module",
   "main": "dist/index.js",
