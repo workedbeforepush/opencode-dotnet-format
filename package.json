@@ -1,0 +1,50 @@
+{
+  "name": "@workedbeforepush/opencode-dotnet-format",
+  "version": "0.1.0",
+  "description": "OpenCode plugin that automatically formats .NET files using dotnet format",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "opencode",
+    "dotnet",
+    "format",
+    "csharp",
+    "fsharp",
+    "vb",
+    "formatter",
+    "plugin"
+  ],
+  "author": "workedbeforepush",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/workedbeforepush/opencode-dotnet-format.git"
+  },
+  "bugs": {
+    "url": "https://github.com/workedbeforepush/opencode-dotnet-format/issues"
+  },
+  "homepage": "https://github.com/workedbeforepush/opencode-dotnet-format#readme",
+  "devDependencies": {
+    "@opencode-ai/plugin": "^1.0.0",
+    "@types/bun": "^1.2.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "@opencode-ai/plugin": ">=1.0.0"
+  }
+}

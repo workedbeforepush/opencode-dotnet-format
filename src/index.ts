@@ -1,3 +1,4 @@
+import type { Plugin } from "@opencode-ai/plugin";
 import path from "path";
 
 const DOTNET_EXTENSIONS = new Set([
@@ -70,7 +71,7 @@ function isDotnetAvailable(): boolean {
   }
 }
 
-export const DotnetFormatPlugin = async ({ client, $, directory }) => {
+export const DotnetFormatPlugin: Plugin = async ({ client, $, directory }) => {
   if (!isDotnetAvailable()) {
     await client.app.log({
       body: {
